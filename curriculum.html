@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximun-scale=1"
+    />
+
+    <!--Estilos-->
+    <link
+      rel="stylesheet"
+      href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/fonts/poppins/poppins.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/scroll.css" />
+    <link rel="stylesheet" href="assets/css/mediaqueris.css" />
+    <!--script-->
+    <script src="assets/js/mostrar_menu.js" defer></script>
+    <title>Portafolio Romario</title>
+  </head>
+
+  <body>
+    <div class="layout">
+      <!--Bara lateral (informacion de usuario)-->
+      <aside class="layout__aside">
+        <section class="aside__user-info">
+          <!--informacion general usuario-->
+
+          <div class="user-info__general">
+            <div class="user-info__container-image">
+              <img
+                src="assets/img/romario_01.jpg"
+                alt=""
+                class="user-info__image"
+              />
+            </div>
+            <h2 class="user-info__name">ROMARIO TORRES</h2>
+
+            <h4 class="user-info__job">Desarrollador web</h4>
+          </div>
+
+          <!--menu de navegacion-->
+          <nav class="layout__menu">
+            <ul class="menu__list">
+              <li class="menu__option">
+                <a href="index.html" class="menu__link">
+                  <i class="fa-solid fa-house menu__icon"></i>
+                  <span class="menu__overlay">Home</span>
+                </a>
+              </li>
+
+              <li class="menu__option">
+                <a href="sobre-mi.html" class="menu__link">
+                  <i class="fa-solid fa-user menu__icon"></i>
+                  <span class="menu__overlay">Usurio</span>
+                </a>
+              </li>
+              <li class="menu__option">
+                <a href="curriculum.html" class="menu__link menu__link--active">
+                  <i class="fa-solid fa-graduation-cap menu__icon"></i>
+                  <span class="menu__overlay">Curriculum</span>
+                </a>
+              </li>
+
+              <!-- <li class="menu__option">
+                            <a href="portafolio.html" class="menu__link">
+                                <i class="fa-solid fa-briefcase menu__icon"></i>
+                                <span class="menu__overlay">portafolio</span>
+                            </a>
+                        </li> -->
+
+              <!-- <li class="menu__option">
+                <a href="blog.html" class="menu__link">
+                  <i class="fa-solid fa-book menu__icon"></i>
+                  <span class="menu__overlay">Blog</span>
+                </a>
+              </li> -->
+
+              <li class="menu__option">
+                <a href="contacto.html" class="menu__link">
+                  <i class="fa-solid fa-envelope menu__icon"></i>
+                  <span class="menu__overlay">Contacto</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!--link a redes sociales-->
+          <div class="user-info__links">
+            <ul class="links__social">
+              <li class="social__opcion">
+                <a href="#" class="social__links">
+                  <i class="fa-brands fa-youtube social__icon"></i>
+                </a>
+              </li>
+
+              <li class="social__opcion">
+                <a href="#" class="social__link">
+                  <i class="fa-brands fa-linkedin social__icon"></i>
+                </a>
+              </li>
+
+              <li class="social__opcion">
+                <a href="#" class="social__link">
+                  <i class="fa-brands fa-instagram social__icon"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!--boton del curriculo-->
+          <div class="user-info__buttons">
+            <a
+              href="assets/pdf/CV DESARROLLADOR WEB.pdf"
+              download="CV Romario Torres - Desarrollador Web"
+              class="user-info__btn"
+              >Descargar CV</a
+            >
+          </div>
+
+          <!--pie de pagina-->
+          <footer class="user-info__footer">
+            &copy; 2025 Romario Torres WEB
+          </footer>
+        </section>
+      </aside>
+      <!--menu responsive-->
+      <div class="layout__menu--toggle">
+        <i class="menu-toggle__icon fa-solid fa-bars"></i>
+        <i class="menu-toggle__icon fa-solid fa-xmark"></i>
+      </div>
+      <!--Contenido principal-->
+      <div class="layout__content">
+        <section class="content__page content__resume">
+          <header class="resume__header">
+            <h1 class="resume__title">Curriculum</h1>
+          </header>
+          <!--SEPCION HABILIDADES-->
+          <div class="resume__container">
+            <section class="resume__left">
+              <header class="resume__subheader">
+                <h2 class="resume__subtitle">Formacion</h2>
+              </header>
+
+              <div class="resume__timelines">
+                <article class="timelines__timeline">
+                  <!-- <header class="timeline__header"> 
+                                    <h4 class="timeline__year">2020</h4> 
+                                    <span class="timeline__company">Bachiller Técnico en Electricidad</span>
+                                    <span class="timeline__company">I.E. LUIS CARLOS GALAN S.</span>
+                                    <span class="timeline__company">La Jagua de Ibirico-Cesar.</span>
+                                </header>-->
+
+                  <div class="timeline__divider"></div>
+
+                  <div class="timeline__description">
+                    <h3 class="timeline__title">Segundaria</h3>
+                    <span class="timeline__company"
+                      >Bachiller Técnico en Electricidad</span
+                    >
+                    <span class="timeline__company"
+                      >I.E. LUIS CARLOS GALAN S.</span
+                    >
+                    <span class="timeline__company"
+                      >La Jagua de Ibirico-Cesar.</span
+                    >
+                    <br />
+                    <h3 class="timeline__title">Univercitaria</h3>
+                    <span class="timeline__company">Ing. de sistemas</span>
+                    <span class="timeline__company"
+                      >UNAD Universidad Nacional Abierta y a Distancia</span
+                    >
+                    <span class="timeline__company">(en proceso) </span>
+
+                    <br />
+                    <h3 class="timeline__title">
+                      CURSOS EN FOCADOS AL DESARROLLO WEB
+                    </h3>
+                    <ul class="lista__cursos">
+                      <li class="cursos">
+                        <span
+                          >Udemy HTML: Desde cero Aprende y domina HTML5 +
+                          Infografías</span
+                        >
+                        <br />
+                        <span>Instructor: Jordán Alexander</span>
+                      </li>
+                      <br />
+                      <li class="cursos">
+                        <span
+                          >Master en CSS3 Avanzado: Maqueta 3 sitios web
+                          profesionales
+                        </span>
+                        <br />
+                        <span>Instructor:Victor Robles</span>
+                      </li>
+                      <br />
+                      <li class="cursos">
+                        <span
+                          >Udemy Ultimate JavaScript: de cero a programador
+                          experto</span
+                        >
+                        <br />
+                        <span>Instructor:Nicolas Schurmann.</span>
+                      </li>
+                      <br />
+                      <li class="cursos">
+                        <span
+                          >JavaScript Moderno: Guía para dominar el
+                          lenguaje</span
+                        >
+                        <br />
+                        <span>Instructor:Fernando Herrera</span>
+                      </li>
+                      <br />
+                      <li class="cursos">
+                        <span>Vue.js: De cero a experto </span>
+                        <br />
+                        <span>Instructor:Fernando Herrera</span>
+                      </li>
+                      <br />
+                      <li class="cursos">
+                        <span>NodeJS: De cero a experto</span>
+                        <br />
+                        <span>Instructor:Fernando Herrera</span>
+                      </li>
+                      <br />
+                      <li class="cursos">
+                        <span>
+                          GIT+GitHub: Todo un sistema de control de versiones de
+                          cero</span
+                        >
+                        <br />
+                        <span>Instructor:Fernando Herrera</span>
+                      </li>
+                      <br>
+                      <li class="cursos">
+                        <span
+                          >Visual Studio Code: Mejora tu velocidad para
+                          codificar
+                        </span>
+                        <br />
+                        <span>Instructor:Fernando Herrera</span>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+              </div>
+
+              <header class="resume__subheader">
+                <h2 class="resume__subtitle">Experiencia</h2>
+              </header>
+
+              <div class="resume__timelines">
+                <article class="timelines__timeline">
+                  <!-- <header class="timeline__header">
+                    <h4 class="timeline__year">2020 - 2024</h4>
+                    <span class="timeline__company">Google</span>
+                  </header> -->
+
+                  <div class="timeline__divider"></div>
+
+                  <div class="timeline__description">
+                    <h3 class="timeline__title">Desarrollo front - end</h3>
+                    <p class="timeline__text">
+                        Tengo ya más de 3 años aprendiendo acerca del desarrollo web en la actualidad
+                        busco mi primer empleo formal.
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <section class="resume__right">
+             <!--  <header class="resume__subheader">
+                <h2 class="resume__subtitle">
+                  Habilidades de <span class="subtitle__color">diseño</span>
+                </h2>
+              </header>
+
+              <div class="resume__skills">
+                <article class="skills__title">
+                  <h4 class="skills__text">Diseño web</h4>
+                  <span class="skills__namber">90%</span>
+                </article>
+                <div class="skills__progressbar">
+                  <div class="skills__percentage skills__percentage--p1"></div>
+                </div>
+
+                <article class="skills__title">
+                  <h4 class="skills__text">Diseño web</h4>
+                  <span class="skills__namber">80%</span>
+                </article>
+
+                <div class="skills__progressbar">
+                  <div class="skills__percentage skills__percentage--p2"></div>
+                </div>
+
+                <article class="skills__title">
+                  <h4 class="skills__text">Diseño web</h4>
+                  <span class="skills__namber">70%</span>
+                </article>
+
+                <div class="skills__progressbar">
+                  <div class="skills__percentage skills__percentage--p3"></div>
+                </div>
+
+                <article class="skills__title">
+                  <h4 class="skills__text">Diseño web</h4>
+                  <span class="skills__namber">60%</span>
+                </article>
+
+                <div class="skills__progressbar">
+                  <div class="skills__percentage skills__percentage--p4"></div>
+                </div>
+              </div> -->
+
+              <header class="resume__subheader">
+                <h2 class="resume__subtitle">
+                  Habilidades de <span class="subtitle__color">codigo</span>
+                </h2>
+              </header>
+
+              <div class="resume__skills">
+                <article class="skills__title">
+                  <h4 class="skills__text">HTML 5</h4>
+                  <span class="skills__namber">80%</span>
+                </article>
+
+                <div class="skills__progressbar">
+                  <div class="skills__percentage skills__percentage--p5"></div>
+                </div>
+
+                <article class="skills__title">
+                  <h4 class="skills__text">CSS 3</h4>
+                  <span class="skills__namber">70%</span>
+                </article>
+
+                <div class="skills__progressbar">
+                  <div class="skills__percentage skills__percentage--p6"></div>
+                </div>
+
+                <article class="skills__title">
+                  <h4 class="skills__text">JavaScript</h4>
+                  <span class="skills__namber">60%</span>
+                </article>
+
+                <div class="skills__progressbar">
+                  <div class="skills__percentage skills__percentage--p7"></div>
+                </div>
+
+                <article class="skills__title">
+                  <h4 class="skills__text">Vue.js</h4>
+                  <span class="skills__namber">50%</span>
+                </article>
+
+                <div class="skills__progressbar">
+                  <div class="skills__percentage skills__percentage--p8"></div>
+                </div>
+
+                <article class="skills__title">
+                    <h4 class="skills__text">NodeJS</h4>
+                    <span class="skills__namber">50%</span>
+                  </article>
+    
+                  <div class="skills__progressbar">
+                    <div class="skills__percentage skills__percentage--p8"></div>
+                  </div>
+                  <article class="skills__title">
+                    <h4 class="skills__text">GIT+GitHub</h4>
+                    <span class="skills__namber">50%</span>
+                  </article>
+    
+                  <div class="skills__progressbar">
+                    <div class="skills__percentage skills__percentage--p10"></div>
+                  </div>
+
+              </div>
+                
+
+             
+
+             
+              <!--parte de conocimientos-->
+              <header class="resume__subheader">
+                <h2 class="resume__subtitle">Areas de Conocimientos</h2>
+              </header>
+
+              <div class="resume__knowledges">
+                <ul class="knowledges__list">
+                  <li class="knowledges__option">Programacion</li>
+                  <li class="knowledges__option">Tecnologías Fundamentales</li>
+                  <li class="knowledges__option">Frameworks y Librerías</li>
+                  <li class="knowledges__option">Herramientas de Desarrollo y Build Tools</li>
+                </ul>
+              </div>
+            </section>
+          </div>
+          <!--SEPCION CERTIFICADOS-->
+          <div class="resume__certificates">
+            <header class="resume__subheader">
+              <h2 class="resume__subtitle">Certificados</h2>
+            </header>
+
+            <section class="certificates__container">
+                
+              <artcle class="certificates__certificate">
+                <div class="certificate__logo">
+                  <img
+                    src="assets/img/certificado-1.png"
+                    alt=""
+                    class="certificate__image"
+                  />
+                </div>
+
+                <div class="certificate__content">
+                  <h4 class="certificate__title">HTML 5</h4>
+                  <span class="certificate__id">Duracion: 3 horas en total</span>
+                  <span class="certificate__date">14 Marzo 2023</span>
+                </div>
+              </artcle>
+
+              <artcle class="certificates__certificate">
+                <div class="certificate__logo">
+                  <img
+                    src="assets/img/certificado-1.png"
+                    alt=""
+                    class="certificate__image"
+                  />
+                </div>
+
+                <div class="certificate__content">
+                  <h4 class="certificate__title">Master en CSS 3</h4>
+                  <span class="certificate__id">Duracion: 37.5 horas en total</span>
+                  <span class="certificate__date">8 enero 2025</span>
+                </div>
+              </artcle>
+
+
+              <artcle class="certificates__certificate">
+                <div class="certificate__logo">
+                  <img
+                    src="assets/img/certificado-1.png"
+                    alt=""
+                    class="certificate__image"
+                  />
+                </div>
+
+                <div class="certificate__content">
+                  <h4 class="certificate__title">Javascript moderno</h4>
+                  <span class="certificate__id">Duracion: 20.5 horas en total</span>
+                  <span class="certificate__date">22 de marzo 2025</span>
+                </div>
+              </artcle>
+
+              <artcle class="certificates__certificate">
+                <div class="certificate__logo">
+                  <img
+                    src="assets/img/certificado-1.png"
+                    alt=""
+                    class="certificate__image"
+                  />
+                </div>
+
+                <div class="certificate__content">
+                  <h4 class="certificate__title">nodeJS</h4>
+                  <span class="certificate__id">Duracion: 37.5 horas en total</span>
+                  <span class="certificate__date">23 de marzo de 2025</span>
+                </div>
+              </artcle>
+
+              <artcle class="certificates__certificate">
+                <div class="certificate__logo">
+                  <img
+                    src="assets/img/certificado-1.png"
+                    alt=""
+                    class="certificate__image"
+                  />
+                </div>
+
+                <div class="certificate__content">
+                  <h4 class="certificate__title">GIT+GitHub</h4>
+                  <span class="certificate__id">Duracion: 12 horas en total</span>
+                  <span class="certificate__date">23 de marzo de 2025</span>
+                </div>
+              </artcle>
+
+              <artcle class="certificates__certificate">
+                <div class="certificate__logo">
+                  <img
+                    src="assets/img/certificado-1.png"
+                    alt=""
+                    class="certificate__image"
+                  />
+                </div>
+
+                <div class="certificate__content">
+                  <h4 class="certificate__title">Vue.js</h4>
+                  <span class="certificate__id">Duracion: 43.5 horas en total</span>
+                  <span class="certificate__date">30 de marzo de 2023</span>
+                </div>
+              </artcle>
+            </section>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="assets/js/control-scroll.js"></script>
+  </body>
+</html>

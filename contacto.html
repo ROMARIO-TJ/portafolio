@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximun-scale=1"
+    />
+
+    <!--Estilos-->
+    <link
+      rel="stylesheet"
+      href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/fonts/poppins/poppins.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/scroll.css" />
+    <link rel="stylesheet" href="assets/css/loader.css" />
+    <link rel="stylesheet" href="assets/css/mediaqueris.css" />
+
+    <!--script-->
+    <script src="assets/js/mostrar_menu.js" defer></script>
+    <script src="assets/js/map.js" defer></script>
+
+    <title>Portafolio Romario</title>
+  </head>
+
+  <body>
+    <div class="layout">
+      <!--Bara lateral (informacion de usuario)-->
+      <aside class="layout__aside">
+        <section class="aside__user-info">
+          <!--informacion general usuario-->
+
+          <div class="user-info__general">
+            <div class="user-info__container-image">
+              <img
+                src="assets/img/romario_01.jpg"
+                alt=""
+                class="user-info__image"
+              />
+            </div>
+            <h2 class="user-info__name">ROMARIO TORRES</h2>
+
+            <h4 class="user-info__job">Desarrollador web</h4>
+          </div>
+
+          <!--menu de navegacion-->
+          <nav class="layout__menu">
+            <ul class="menu__list">
+              <li class="menu__option">
+                <a href="index.html" class="menu__link">
+                  <i class="fa-solid fa-house menu__icon"></i>
+                  <span class="menu__overlay">Home</span>
+                </a>
+              </li>
+
+              <li class="menu__option">
+                <a href="sobre-mi.html" class="menu__link">
+                  <i class="fa-solid fa-user menu__icon"></i>
+                  <span class="menu__overlay">Usurio</span>
+                </a>
+              </li>
+              <li class="menu__option">
+                <a href="curriculum.html" class="menu__link">
+                  <i class="fa-solid fa-graduation-cap menu__icon"></i>
+                  <span class="menu__overlay">Curriculum</span>
+                </a>
+              </li>
+
+              <!--  <li class="menu__option">
+                            <a href="portafolio.html" class="menu__link">
+                                <i class="fa-solid fa-briefcase menu__icon"></i>
+                                <span class="menu__overlay">portafolio</span>
+                            </a>
+                        </li> -->
+
+              <!-- <li class="menu__option">
+                            <a href="blog.html" class="menu__link">
+                                <i class="fa-solid fa-book menu__icon"></i>
+                                <span class="menu__overlay">Blog</span>
+                            </a>
+                        </li> -->
+
+              <li class="menu__option">
+                <a href="contacto.html" class="menu__link menu__link--active">
+                  <i class="fa-solid fa-envelope menu__icon"></i>
+                  <span class="menu__overlay">Contacto</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!--link a redes sociales-->
+          <div class="user-info__links">
+            <ul class="links__social">
+              <li class="social__opcion">
+                <a href="#" class="social__links">
+                  <i class="fa-brands fa-youtube social__icon"></i>
+                </a>
+              </li>
+
+              <li class="social__opcion">
+                <a href="#" class="social__link">
+                  <i class="fa-brands fa-linkedin social__icon"></i>
+                </a>
+              </li>
+
+              <li class="social__opcion">
+                <a href="#" class="social__link">
+                  <i class="fa-brands fa-instagram social__icon"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!--boton del curriculo-->
+          <div class="user-info__buttons">
+            <a
+              href="assets/pdf/CV DESARROLLADOR WEB.pdf"
+              download="CV Romario Torres - Desarrollador Web"
+              class="user-info__btn"
+              >Descargar CV</a
+            >
+          </div>
+
+          <!--pie de pagina-->
+          <footer class="user-info__footer">
+            &copy; 2025 Romario Torres WEB
+          </footer>
+        </section>
+      </aside>
+      <!--menu responsive-->
+      <div class="layout__menu--toggle">
+        <i class="menu-toggle__icon fa-solid fa-bars"></i>
+        <i class="menu-toggle__icon fa-solid fa-xmark"></i>
+      </div>
+      <!--Contenido principal-->
+      <div class="layout__content">
+        <section class="content__page content__contacto">
+          <header class="contacto__header">
+            <h1 class="contacto__title">contacto</h1>
+          </header>
+
+          <div class="contacto__container">
+            <section class="contacto__info">
+              <div class="contacto__data">
+                <i class="contacto__icon fa-solid fa-location-dot"></i>
+                <h2 class="contacto__subtitle">La Jagua de Ibirico (Cesar)</h2>
+              </div>
+
+              <div class="contacto__data">
+                <i class="contacto__icon fa-solid fa-phone"></i>
+                <h2 class="contacto__subtitle">316 076 0404</h2>
+              </div>
+
+              <div class="contacto__data">
+                <i class="contacto__icon fa-solid fa-envelope"></i>
+                <h2 class="contacto__subtitle">
+                  torresjimenezromario2@gmail.com
+                </h2>
+              </div>
+
+              <div class="contacto__data">
+                <i class="contacto__icon fa-solid fa-circle-check"></i>
+                <h2 class="contacto__subtitle">Desarrollador front end</h2>
+              </div>
+            </section>
+
+            <section class="contacto__form-box">
+              <div class="contacto__map" id="load-iframe-map">
+                <span class="loader"></span>
+              </div>
+              <header class="contacto__fron-header">
+                <h3 class="fron-header__title">
+                  ¿Como puedo <span class="title__color">ayudarte?</span>
+                </h3>
+              </header>
+
+              <form
+                action="https://formsubmit.co/torresjimenezromario2@gmail.com"
+                method="POST"
+                class="contacto__form"
+              >
+                <div class="from__container">
+                  <section class="from__left">
+                    <div class="from__group">
+                      <input
+                        type="text"
+                        class="from__input"
+                        name="name"
+                        required
+                        placeholder="Nombre"
+                      />
+                      <label for="name" class="from__label">Nombre</label>
+                    </div>
+
+                    <div class="from__group">
+                      <input
+                        type="email"
+                        class="from__input"
+                        name="email"
+                        required
+                        placeholder="Email"
+                      />
+                      <label for="email" class="from__label">Email</label>
+                    </div>
+
+                    <div class="from__group">
+                      <input
+                        type="text"
+                        class="from__input"
+                        name="subject"
+                        required
+                        placeholder="Asunto"
+                      />
+                      <label for="subject" class="from__label">Asunto</label>
+                    </div>
+                  </section>
+
+                  <section class="from__right">
+                    <div class="from__group from__group--textarea">
+                      <textarea
+                        class="from__input from__input--textarea"
+                        name="message"
+                        required
+                        placeholder="Mensaje"
+                      ></textarea>
+                      <label for="message" class="from__label">Mensaje</label>
+                    </div>
+                  </section>
+                </div>
+
+                <!-- Configuración adicional de FormSubmit -->
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://tu-sitio.com/gracias.html"
+                />
+                <!-- Redirige después de enviar -->
+                <input type="hidden" name="_captcha" value="false" />
+                <!-- Desactiva el captcha si no lo quieres -->
+
+                <input
+                  type="submit"
+                  class="from__button"
+                  value="Enviar Mensaje"
+                />
+              </form>
+            </section>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="assets/js/control-scroll.js"></script>
+  </body>
+</html>

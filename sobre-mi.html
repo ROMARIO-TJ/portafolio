@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximun-scale=1"
+    />
+
+    <!--Estilos-->
+    <link
+      rel="stylesheet"
+      href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/fonts/poppins/poppins.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/scroll.css" />
+    <link rel="stylesheet" href="assets/css/scroll-foz.css" />
+    <link rel="stylesheet" href="assets/css/mediaqueris.css" />
+    <!--script-->
+    <script src="assets/js/mostrar_menu.js" defer></script>
+    <title>Portafolio Romario</title>
+  </head>
+
+  <body>
+    <div class="layout">
+      <!--Bara lateral (informacion de usuario)-->
+      <aside class="layout__aside">
+        <section class="aside__user-info">
+          <!--informacion general usuario-->
+
+          <div class="user-info__general">
+            <div class="user-info__container-image">
+              <img
+                src="assets/img/romario_01.jpg"
+                alt=""
+                class="user-info__image"
+              />
+            </div>
+            <h2 class="user-info__name">ROMARIO TORRES</h2>
+
+            <h4 class="user-info__job">Desarrollador web</h4>
+          </div>
+
+          <!--menu de navegacion-->
+          <nav class="layout__menu">
+            <ul class="menu__list">
+              <li class="menu__option">
+                <a href="index.html" class="menu__link">
+                  <i class="fa-solid fa-house menu__icon"></i>
+                  <span class="menu__overlay">Home</span>
+                </a>
+              </li>
+
+              <li class="menu__option">
+                <a href="sobre-mi.html" class="menu__link menu__link--active">
+                  <i class="fa-solid fa-user menu__icon"></i>
+                  <span class="menu__overlay">Usurio</span>
+                </a>
+              </li>
+              <li class="menu__option">
+                <a href="curriculum.html" class="menu__link">
+                  <i class="fa-solid fa-graduation-cap menu__icon"></i>
+                  <span class="menu__overlay">Curriculum</span>
+                </a>
+              </li>
+
+              <!-- <li class="menu__option">
+                <a href="portafolio.html" class="menu__link">
+                  <i class="fa-solid fa-briefcase menu__icon"></i>
+                  <span class="menu__overlay">portafolio</span>
+                </a>
+              </li> -->
+
+              <!-- <li class="menu__option">
+                <a href="blog.html" class="menu__link">
+                  <i class="fa-solid fa-book menu__icon"></i>
+                  <span class="menu__overlay">Blog</span>
+                </a>
+              </li> -->
+
+              <li class="menu__option">
+                <a href="contacto.html" class="menu__link">
+                  <i class="fa-solid fa-envelope menu__icon"></i>
+                  <span class="menu__overlay">Contacto</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!--link a redes sociales-->
+          <div class="user-info__links">
+            <ul class="links__social">
+              <li class="social__opcion">
+                <a href="#" class="social__links">
+                  <i class="fa-brands fa-youtube social__icon"></i>
+                </a>
+              </li>
+
+              <li class="social__opcion">
+                <a href="#" class="social__link">
+                  <i class="fa-brands fa-linkedin social__icon"></i>
+                </a>
+              </li>
+
+              <li class="social__opcion">
+                <a href="#" class="social__link">
+                  <i class="fa-brands fa-instagram social__icon"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!--boton del curriculo-->
+          <div class="user-info__buttons">
+            <a
+              href="assets/pdf/CV DESARROLLADOR WEB.pdf"
+              download="CV Romario Torres - Desarrollador Web"
+              class="user-info__btn"
+              >Descargar CV</a
+            >
+          </div>
+
+          <!--pie de pagina-->
+          <footer class="user-info__footer">
+            &copy; 2025 Romario Torres WEB
+          </footer>
+        </section>
+      </aside>
+      <!--menu responsive-->
+      <div class="layout__menu--toggle">
+        <i class="menu-toggle__icon fa-solid fa-bars"></i>
+        <i class="menu-toggle__icon fa-solid fa-xmark"></i>
+      </div>
+      <!--Contenido principal-->
+      <div class="layout__content">
+        <section class="content__page content__page--about">
+          <!--Este contenido cambia en cada pagina del sitio web-->
+          <header class="about__header">
+            <h2 class="about__title">
+              Sobre <span class="title__color">Mi</span>
+            </h2>
+          </header>
+          <!--INFORMACIO PERSONAL-->
+          <section class="about__personal-info">
+            <article class="personal-info__bio">
+              <p class="personal-info__description">
+                Soy un desarrollador front-end polifacético y versátil con
+                habilidades destacadas en HTML5, CSS3, JavaScript, Vue.js, Git y
+                GitHub Me enfoco en el usuario y tengo una pasión por la
+                tecnología, combinada con un enfoque empresarial que me permite
+                colaborar interdisciplinariamente y tener una visión integral
+                del proyecto. Actualmente soy estudiante de Ingeniería en
+                Sistemas, lo que refleja mi compromiso continuo con el
+                aprendizaje y el crecimiento en mi carrera. Además, cuento con
+                experiencia y conocimientos en el framework Vue.js, lo que me
+                permite desarrollar aplicaciones web modernas y dinámicas. Estoy
+                entusiasmado por seguir expandiendo mis habilidades y aplicar
+                mis conocimientos en un entorno laboral desafiante. Actualmente,
+                estoy en búsqueda de oportunidades profesionales como
+                desarrollador front-end, donde pueda contribuir con mi
+                experiencia y seguir evolucionando en el mundo del desarrollo
+                web.
+              </p>
+            </article>
+
+            <div class="personal-info__data">
+              <ul class="personal-info__list">
+                <li class="personal-info__option">
+                  <span class="personal-info__title">Edad</span>
+                  <span class="personal-info__value">30</span>
+                </li>
+                <li class="personal-info__option">
+                  <span class="personal-info__title">Pais</span>
+                  <span class="personal-info__value">Colombia</span>
+                </li>
+                <li class="personal-info__option">
+                  <span class="personal-info__title">Direccion</span>
+                  <span class="personal-info__value"
+                    >Calle 6 #2-72 br las malvina la jagua de ibirico
+                    cesar</span
+                  >
+                </li>
+                <li class="personal-info__option">
+                  <span class="personal-info__title">Correo</span>
+                  <span class="personal-info__value"
+                    >torresjimenezromario2@gmail.com</span
+                  >
+                </li>
+                <li class="personal-info__option">
+                  <span class="personal-info__title">Telefono-1</span>
+                  <span class="personal-info__value">316-0760404</span>
+                  <br />
+                  <span class="personal-info__title">Telefono-2</span>
+                  <span class="personal-info__value">312-3951663</span>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!--PARTE DE LOS SERVICIOS-->
+          <section class="about__service">
+            <header class="service__header">
+              <h3 class="service__title-prin">
+                Lo que <span class="title__color">hago</span>
+              </h3>
+            </header>
+            <div class="service__container">
+              <article class="service__service">
+                <div class="service__icon">
+                  <i class="servicereal-icon fa-solid fa-code"></i>
+                </div>
+                <div class="service__content">
+                  <h4 class="service__title">programacion</h4>
+                  <p class="service__description">
+                    Tengo experiencia en el desarrollo de aplicaciones web
+                    interactivas y dinámicas utilizando HTML5, CSS3, JavaScript
+                    y Vue.js. Me especializo en la creación de interfaces de
+                    usuario atractivas y optimizadas para la mejor experiencia
+                    del usuario. Además, manejo Git y GitHub, lo que me permite
+                    colaborar eficazmente en entornos de desarrollo ágil.
+                  </p>
+                </div>
+              </article>
+
+              <article class="service__service">
+                <div class="service__icon">
+                  <i class="servicereal-icon fa-solid fa-chalkboard-user"></i>
+                </div>
+                <div class="service__content">
+                  <h4 class="service__title">
+                    Aprendizaje y Desarrollo Profesional
+                  </h4>
+                  <p class="service__description">
+                    Actualmente, estudio Ingeniería en Sistemas, lo que me
+                    permite ampliar mis conocimientos en estructuras de datos,
+                    algoritmos y arquitectura de software. Me apasiona estar en
+                    constante aprendizaje sobre nuevas tecnologías, metodologías
+                    de desarrollo y mejores prácticas en frontend.
+                  </p>
+                </div>
+              </article>
+
+              <article class="service__service">
+                <div class="service__icon">
+                  <i class="servicereal-icon fa-solid fa-computer"></i>
+                </div>
+                <div class="service__content">
+                  <h4 class="service__title">Desarrollo web</h4>
+                  <p class="service__description">
+                    Diseño y desarrollo sitios web modernos y responsivos,
+                    aplicando las mejores prácticas en accesibilidad, SEO y
+                    optimización de rendimiento. Trabajo con HTML5, CSS3 y
+                    JavaScript, y tengo experiencia en el uso del framework
+                    Vue.js para crear interfaces dinámicas e interactivas.
+                    Además, utilizo CSS puro y herramientas como Vite, Webpack
+                    para estructurar y mejorar la mantenibilidad del código.
+                  </p>
+                </div>
+              </article>
+
+              <article class="service__service">
+                <div class="service__icon">
+                  <i class="servicereal-icon fa-solid fa-terminal"></i>
+                </div>
+                <div class="service__content">
+                  <h4 class="service__title">Administracion de sistemas</h4>
+                  <p class="service__description">
+                    Cuento con conocimientos en gestión de servidores web,
+                    configuración de entornos de desarrollo y despliegue de
+                    aplicaciones.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="assets/js/control-scroll.js"></script>
+  </body>
+</html>

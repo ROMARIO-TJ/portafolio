@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1">
+
+    <!--Estilos-->
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/fonts/poppins/poppins.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/scroll.css">
+    <link rel="stylesheet" href="assets/css/mediaqueris.css">
+    <!--script-->
+    <script src="assets/js/mostrar_menu.js" defer></script>
+    <title>Portafolio Romario</title>
+</head>
+
+<body>
+    <div class="layout">
+
+        <!--Bara lateral (informacion de usuario)-->
+        <aside class="layout__aside">
+            <section class="aside__user-info">
+
+                <!--informacion general usuario-->
+
+                <div class="user-info__general">
+                    <div class="user-info__container-image">
+                        <img src="assets/img/romario_01.jpg" alt="" class="user-info__image">
+                    </div>
+                    <h2 class="user-info__name">ROMARIO TORRES</h2>
+
+                    <h4 class="user-info__job">Desarrollador web</h4>
+                </div>
+
+
+                <!--menu de navegacion-->
+                <nav class="layout__menu">
+                    <ul class="menu__list">
+                        <li class="menu__option">
+                            <a href="index.html" class="menu__link">
+                                <i class="fa-solid fa-house menu__icon"></i>
+                                <span class="menu__overlay">Home</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="sobre-mi.html" class="menu__link">
+                                <i class="fa-solid fa-user menu__icon"></i>
+                                <span class="menu__overlay">Usurio</span>
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="curriculum.html" class="menu__link">
+                                <i class="fa-solid fa-graduation-cap menu__icon"></i>
+                                <span class="menu__overlay">Curriculum</span>
+                            </a>
+                        </li>
+
+                       <!--  <li class="menu__option">
+                            <a href="portafolio.html" class="menu__link">
+                                <i class="fa-solid fa-briefcase menu__icon"></i>
+                                <span class="menu__overlay">portafolio</span>
+                            </a>
+                        </li> -->
+
+                       <!--  <li class="menu__option">
+                            <a href="blog.html" class="menu__link menu__link--active">
+                                <i class="fa-solid fa-book menu__icon"></i>
+                                <span class="menu__overlay">Blog</span>
+                            </a>
+                        </li> -->
+
+                        <li class="menu__option">
+                            <a href="contacto.html" class="menu__link">
+                                <i class="fa-solid fa-envelope menu__icon"></i>
+                                <span class="menu__overlay">Contacto</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+
+                <!--link a redes sociales-->
+                <div class="user-info__links">
+                    <ul class="links__social">
+
+                        <li class="social__opcion">
+                            <a href="#" class="social__links">
+                                <i class="fa-brands fa-youtube social__icon"></i>
+                            </a>
+                        </li>
+
+                        <li class="social__opcion">
+                            <a href="#" class="social__link">
+                                <i class="fa-brands fa-linkedin social__icon"></i>
+                            </a>
+                        </li>
+
+                        <li class="social__opcion">
+                            <a href="#" class="social__link">
+                                <i class="fa-brands fa-instagram social__icon"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!--boton del curriculo-->
+                <div class="user-info__buttons">
+                    <a
+                    href="assets/pdf/CV DESARROLLADOR WEB.pdf"
+                    download="CV Romario Torres - Desarrollador Web"
+                    class="user-info__btn"
+                    >Descargar CV</a
+                  >
+                </div>
+
+                <!--pie de pagina-->
+                <footer class="user-info__footer">
+                    &copy; 2025 Romario Torres WEB
+                </footer>
+
+            </section>
+        </aside>
+          <!--menu responsive-->
+       <div class="layout__menu--toggle">
+        <i class="menu-toggle__icon fa-solid fa-bars"></i>
+        <i class="menu-toggle__icon fa-solid fa-xmark"></i>
+       </div>
+        <!--Contenido principal-->
+        <div class="layout__content">
+            <section class="content__page content__blog">
+                <header class="blog__header">
+                    <h1 class="blog__title">Blog</h1>
+                </header>
+
+                <section class="blog__artcle">
+                    <article class="article__article">
+
+                        <div class="article__top">
+                            <div class="article__category">Desarrollo</div>
+                            <a href="#" class="imagen__link">
+                                <div class="article__mask">
+                                    <img src="assets/img/articulo-1.jpg" alt="Imagen del blog" class="article__image">
+                                </div>
+                                <div class="article__logo">
+                                    <i class="article__icon fa-solid fa-book"></i>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="article__bottom">
+                            <time class="article__date" datetime="2024-08-30">30/08/2024</time>
+                            <a href="#" class="article__link"></a>
+                            <h2 class="article__title">Como aprender a programar en 2024</h2>
+                        </div>
+
+                    </article>
+
+                    <article class="article__article">
+
+                        <div class="article__top">
+                            <div class="article__category">Desarrollo</div>
+                            <a href="#" class="imagen__link">
+                                <div class="article__mask">
+                                    <img src="assets/img/articulo-2.jpg" alt="Imagen del blog" class="article__image">
+                                </div>
+                                <div class="article__logo">
+                                    <i class="article__icon fa-solid fa-book"></i>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="article__bottom">
+                            <time class="article__date" datetime="2024-08-30">30/08/2024</time>
+                            <a href="#" class="article__link"></a>
+                            <h2 class="article__title">Como aprender a programar en 2024</h2>
+                        </div>
+
+                    </article>
+
+                    <article class="article__article">
+
+                        <div class="article__top">
+                            <div class="article__category">Desarrollo</div>
+                            <a href="#" class="imagen__link">
+                                <div class="article__mask">
+                                    <img src="assets/img/articulo-3.jpg" alt="Imagen del blog" class="article__image">
+                                </div>
+                                <div class="article__logo">
+                                    <i class="article__icon fa-solid fa-book"></i>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="article__bottom">
+                            <time class="article__date" datetime="2024-08-30">30/08/2024</time>
+                            <a href="#" class="article__link"></a>
+                            <h2 class="article__title">Como aprender a programar en 2024</h2>
+                        </div>
+
+                    </article>
+
+                    <article class="article__article">
+
+                        <div class="article__top">
+                            <div class="article__category">Desarrollo</div>
+                            <a href="#" class="imagen__link">
+                                <div class="article__mask">
+                                    <img src="assets/img/articulo-4.jpg" alt="Imagen del blog" class="article__image">
+                                </div>
+                                <div class="article__logo">
+                                    <i class="article__icon fa-solid fa-book"></i>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="article__bottom">
+                            <time class="article__date" datetime="2024-08-30">30/08/2024</time>
+                            <a href="#" class="article__link"></a>
+                            <h2 class="article__title">Como aprender a programar en 2024</h2>
+                        </div>
+
+                    </article>
+
+
+                </section>
+
+
+            </section>
+        </div>
+
+
+        </section>
+    </div>
+    </div>
+
+
+    <script src="assets/js/control-scroll.js"></script>
+</body>
+
+</html>
