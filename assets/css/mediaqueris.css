@@ -216,7 +216,7 @@
 
 @media (max-width: 480px) {
   .page__name {
-    font-size: 4.8rem;
+    font-size: 3rem;
     line-height: 5.6rem;
     text-align: center;
   }
